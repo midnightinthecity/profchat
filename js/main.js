@@ -5,7 +5,7 @@ let getNewMessages = function() {
     for (let message of messages) {
       $messageDiv.append(`<p>${message.data.who}: ${message.data.message}</p>`)
     }
-    $('#messages').html($messageDiv)
+    $('#messages').empty().append($messageDiv)
   })
 }
 
