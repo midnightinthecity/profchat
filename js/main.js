@@ -3,7 +3,8 @@ let getNewMessages = function() {
     let messages = JSON.parse(data).sort((a, b) => (a['number'] - b['number']))
     let $messageDiv = $('div')
     for (let message of messages) {
-      $messageDiv.append(`<p>${message.data.who}: ${message.data.message}</p>`)
+      let messageText = `<p>${message.data.who}: ${message.data.message}</p>`
+      $messageDiv.append(messageText)
     }
     $('#messages').empty().append($messageDiv)
   })
