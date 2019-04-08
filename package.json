@@ -1,0 +1,26 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "clean": "rm -rf functions-build && mkdir functions-build",
+    "zip": "cd functions && npm install && zip -r messages.zip *",
+    "postzip": "mv functions/messages.zip functions-build",
+    "prebuild": "npm run clean && npm run zip",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shade-tree-software/functions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shade-tree-software/functions/issues"
+  },
+  "homepage": "https://github.com/shade-tree-software/functions#readme"
+}

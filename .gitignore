@@ -1,0 +1,4 @@
+functions/node_modules
+.netlify
+functions-build
+.idea
