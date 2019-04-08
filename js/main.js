@@ -7,6 +7,8 @@ $(function() {
       for (let message of messages) {
         let messageText = `<p>${message.data.who}: ${message.data.message}</p>`
         $messageDiv.append(messageText)
+        console.log(messageText)
+        console.log($messageDiv.text())
       }
       $('#messages').empty().append($messageDiv)
     })
