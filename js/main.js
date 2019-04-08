@@ -6,11 +6,12 @@ $(function() {
       let $messageDiv = $('div')
       for (let message of messages) {
         let messageText = `<p>${message.data.who}: ${message.data.message}</p>`
-        $messageDiv.append(messageText)
+        $messageDiv.append($(messageText))
         console.log(messageText)
-        console.log($messageDiv.text())
+        console.log($messageDiv)
       }
       $('#messages').empty().append($messageDiv)
+      console.log($('#messages'))
     })
   }
 
