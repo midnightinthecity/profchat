@@ -11,4 +11,4 @@ let getNewMessages = function() {
 
 getNewMessages()
 
-setInterval(getNewMessages, 5000)
+setInterval(getNewMessages, 10000)
